@@ -20,7 +20,7 @@ export class RouteHref {
     this.element = element;
   }
 
-  bind() {
+  attached() {
     this.isActive = true;
     this.processChange();
   }

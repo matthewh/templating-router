@@ -31,7 +31,7 @@ System.register(['aurelia-templating', 'aurelia-dependency-injection', 'aurelia-
           this.element = element;
         }
 
-        RouteHref.prototype.bind = function bind() {
+        RouteHref.prototype.attached = function attached() {
           this.isActive = true;
           this.processChange();
         };
